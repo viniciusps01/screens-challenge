@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:screens_challenge/theming/themes.dart';
 import 'package:screens_challenge/ui/pages/home_pix_page/home_pix_page.dart';
+import 'package:screens_challenge/ui/pages/key_already_registered_page/key_already_registered_page.dart';
 import 'package:screens_challenge/ui/pages/key_registering_page/key_registering_page.dart';
 import 'package:screens_challenge/ui/pages/keys_menu_page/keys_menu_page.dart';
 import 'package:screens_challenge/ui/pages/message_page/message_page.dart';
@@ -88,6 +89,13 @@ class Home extends StatelessWidget {
                 const SignupSuccessPage(),
               ),
               child: const Text('Cadastro Realizado'),
+            ),
+            OutlinedButton(
+              onPressed: () => goToPage(
+                context,
+                const KeyAlreadyRegisteredPage(),
+              ),
+              child: const Text('Chave já Cadastrada'),
             )
           ],
         ),
