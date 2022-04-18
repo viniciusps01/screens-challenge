@@ -4,6 +4,8 @@ import 'package:screens_challenge/ui/pages/home_pix_page/home_pix_page.dart';
 import 'package:screens_challenge/ui/pages/key_registering_page/key_registering_page.dart';
 import 'package:screens_challenge/ui/pages/keys_menu_page/keys_menu_page.dart';
 
+import 'ui/pages/cpf_key_page/cpf_key_page.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -55,6 +57,13 @@ class Home extends StatelessWidget {
                 const KeysMenuPage(),
               ),
               child: const Text('Menu Chaves'),
+            ),
+            OutlinedButton(
+              onPressed: () => goToPage(
+                context,
+                const CPFKeyPage(),
+              ),
+              child: const Text('Chave CPF'),
             )
           ],
         ),
