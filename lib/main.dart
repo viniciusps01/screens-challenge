@@ -6,6 +6,7 @@ import 'package:screens_challenge/ui/pages/keys_menu_page/keys_menu_page.dart';
 import 'package:screens_challenge/ui/pages/message_page/message_page.dart';
 
 import 'ui/pages/cpf_key_page/cpf_key_page.dart';
+import 'ui/pages/signup_success_page/signup_success_page.dart';
 import 'ui/pages/validation_page/validation_page.dart';
 
 void main() {
@@ -80,6 +81,13 @@ class Home extends StatelessWidget {
                 const MessagePage(),
               ),
               child: const Text('Recado'),
+            ),
+            OutlinedButton(
+              onPressed: () => goToPage(
+                context,
+                const SignupSuccessPage(),
+              ),
+              child: const Text('Cadastro Realizado'),
             )
           ],
         ),
