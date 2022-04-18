@@ -3,6 +3,7 @@ import 'package:screens_challenge/theming/themes.dart';
 import 'package:screens_challenge/ui/pages/home_pix_page/home_pix_page.dart';
 import 'package:screens_challenge/ui/pages/key_registering_page/key_registering_page.dart';
 import 'package:screens_challenge/ui/pages/keys_menu_page/keys_menu_page.dart';
+import 'package:screens_challenge/ui/pages/message_page/message_page.dart';
 
 import 'ui/pages/cpf_key_page/cpf_key_page.dart';
 import 'ui/pages/validation_page/validation_page.dart';
@@ -72,6 +73,13 @@ class Home extends StatelessWidget {
                 const ValidationPage(),
               ),
               child: const Text('Validação'),
+            ),
+            OutlinedButton(
+              onPressed: () => goToPage(
+                context,
+                const MessagePage(),
+              ),
+              child: const Text('Recado'),
             )
           ],
         ),
