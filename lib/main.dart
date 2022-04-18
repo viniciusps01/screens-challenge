@@ -5,6 +5,7 @@ import 'package:screens_challenge/ui/pages/key_registering_page/key_registering_
 import 'package:screens_challenge/ui/pages/keys_menu_page/keys_menu_page.dart';
 
 import 'ui/pages/cpf_key_page/cpf_key_page.dart';
+import 'ui/pages/validation_page/validation_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -64,6 +65,13 @@ class Home extends StatelessWidget {
                 const CPFKeyPage(),
               ),
               child: const Text('Chave CPF'),
+            ),
+            OutlinedButton(
+              onPressed: () => goToPage(
+                context,
+                const ValidationPage(),
+              ),
+              child: const Text('Validação'),
             )
           ],
         ),
