@@ -4,8 +4,8 @@ import 'package:screens_challenge/ui/widgets/pix_key.dart';
 
 import '../../widgets/orange_button.dart';
 
-class SignupSuccessPage extends StatelessWidget {
-  const SignupSuccessPage({Key? key}) : super(key: key);
+class RegisterSuccessPage extends StatelessWidget {
+  const RegisterSuccessPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
