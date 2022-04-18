@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:screens_challenge/theming/themes.dart';
 import 'package:screens_challenge/ui/pages/home_pix_page/home_pix_page.dart';
 import 'package:screens_challenge/ui/pages/key_registering_page/key_registering_page.dart';
+import 'package:screens_challenge/ui/pages/keys_menu_page/keys_menu_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -31,24 +32,32 @@ class Home extends StatelessWidget {
         width: double.infinity,
         padding: const EdgeInsets.all(8.0),
         child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              OutlinedButton(
-                onPressed: () => goToPage(
-                  context,
-                  const HomePixPage(),
-                ),
-                child: const Text('Home Pix'),
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            OutlinedButton(
+              onPressed: () => goToPage(
+                context,
+                const HomePixPage(),
               ),
-              OutlinedButton(
-                onPressed: () => goToPage(
-                  context,
-                  const KeyRegisteringPage(),
-                ),
-                child: const Text('Cadastro Chave'),
-              )
-            ]),
+              child: const Text('Home Pix'),
+            ),
+            OutlinedButton(
+              onPressed: () => goToPage(
+                context,
+                const KeyRegisteringPage(),
+              ),
+              child: const Text('Cadastro Chave'),
+            ),
+            OutlinedButton(
+              onPressed: () => goToPage(
+                context,
+                const KeysMenuPage(),
+              ),
+              child: const Text('Menu Chaves'),
+            )
+          ],
+        ),
       ),
     );
   }
