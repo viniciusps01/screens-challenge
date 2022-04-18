@@ -83,7 +83,7 @@ class MessagePage extends StatelessWidget {
                 width: double.infinity,
                 child: GreyButton(
                   onPressed: () {},
-                  label: 'Cadastrar chave',
+                  label: 'Entendi',
                 ),
               )
             ],

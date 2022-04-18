@@ -58,14 +58,14 @@ class SignupSuccessPage extends StatelessWidget {
             width: double.infinity,
             child: OrangeButton(
               onPressed: () {},
-              label: 'Avançar',
+              label: 'Compartilhar',
             ),
           ),
           SizedBox(
             width: double.infinity,
             child: GreyButton(
               onPressed: () {},
-              label: 'Avançar',
+              label: 'Finalizar',
             ),
           )
         ],
