@@ -4,6 +4,7 @@ import 'package:flutter/services.dart';
 import 'colors.dart';
 
 final defaultTheme = ThemeData(
+  primaryColor: primaryColor,
   iconTheme: IconThemeData(
     color: primaryColor,
   ),

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:screens_challenge/theming/themes.dart';
 import 'package:screens_challenge/ui/pages/home_pix_page/home_pix_page.dart';
+import 'package:screens_challenge/ui/pages/key_registering_page/key_registering_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -39,6 +40,13 @@ class Home extends StatelessWidget {
                   const HomePixPage(),
                 ),
                 child: const Text('Home Pix'),
+              ),
+              OutlinedButton(
+                onPressed: () => goToPage(
+                  context,
+                  const KeyRegisteringPage(),
+                ),
+                child: const Text('Cadastro Chave'),
               )
             ]),
       ),
