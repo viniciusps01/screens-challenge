@@ -18,6 +18,9 @@ class GreyButton extends StatelessWidget {
       style: ElevatedButton.styleFrom(
         primary: secondaryColor,
         tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+        shape: const RoundedRectangleBorder(
+          borderRadius: BorderRadius.zero,
+        ),
       ),
       child: Text(
         label,
