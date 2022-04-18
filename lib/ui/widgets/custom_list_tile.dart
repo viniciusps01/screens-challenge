@@ -27,11 +27,13 @@ class CustomListTile extends StatelessWidget {
         ],
       ),
       child: ListTile(
-        leading: Icon(
-          leadingIconData,
-          color: Theme.of(context).iconTheme.color,
-          size: leadingIconSize,
-        ),
+        leading: leadingIconData == null
+            ? null
+            : Icon(
+                leadingIconData,
+                color: Theme.of(context).iconTheme.color,
+                size: leadingIconSize,
+              ),
         trailing: Icon(
           Icons.arrow_forward_ios_rounded,
           color: Theme.of(context).iconTheme.color,
